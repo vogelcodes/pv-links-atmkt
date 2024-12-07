@@ -9,13 +9,13 @@ export const metadata: Metadata = {
 const links = [
   {
     name: "Meu Canal noYouTube",
-    url: "https://youtube.com",
+    url: "https://www.youtube.com/@vogelcodes",
     img: "/yt.webp",
   },
   {
     name: "Meu Perfil no Instagram",
     url: "https://instagram.com/daniel_vogel",
-    img: "/yt.webp",
+    img: "/instagram-logo.svg",
   },
 ];
 
@@ -40,7 +40,7 @@ export default function Links() {
         <div className="flex  text-white flex-col w-full space-y-4 mx-auto my-4 justify-between">
           {links.map((link, i) => (
             <a key={i} href={link.url} target="_blank">
-              <div className="bg-blue-950 rounded-md px-2 py-10 border-2 border-green text-cream h-16 duration-200 place-items-center justify-between flex">
+              <div className="bg-[#000530] rounded-md px-4 py-10 border-2 border-green text-cream h-16 duration-200 place-items-center justify-between flex">
                 <Image src={link.img} width={48} height={48} alt="logo" />
                 <p className="font-semibold text-balance w-full text-base">
                   {link.name}
